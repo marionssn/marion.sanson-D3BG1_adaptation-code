@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS-only Marquee Menu Effect | Codrops</title>
+	<meta name="description" content="A menu with a css-only marquee hover effect" />
+	<meta name="keywords" content="marquee, css, animation, loop, infinite, hover, menu, navigation" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/zhq0vyf.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+	<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+</head>
+
+<body class="demo-1">
+	<main>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">Marion Sanson</h1>
+				<p class="frame__info">Carnet de souvenirs<a href=""></a></p>
+			</div>
+			<div class="frame__links">
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+		</div>
+		<nav class="menu">
+			<div class="menu__item">
+				<a class="menu__item-link">Friendzzzz</a>
+				<img class="menu__item-img" src="img/photo1.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Festoche</span>
+						<span>Festoche</span>
+						<span>Festoche</span>
+						<span>Festoche</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Dog hour</a>
+				<img class="menu__item-img" src="img/photo2.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>SunKiss</span>
+						<span>Sunkiss</span>
+						<span>SunKiss</span>
+						<span>SunKiss</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Berlin</a>
+				<img class="menu__item-img" src="img/photo4.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Triplette</span>
+						<span>Triplette</span>
+						<span>Triplette</span>
+						<span>Triplette</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Bains Publics</a>
+				<img class="menu__item-img" src="img/photo3.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Et Plouf !</span>
+						<span>Et Plouf !</span>
+						<span>Et Plouf !</span>
+						<span>Et Plouf !</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Contact</a>
+				<img class="menu__item-img" src="img/photo5.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Me</span>
+						<span>Me</span>
+						<span>Me</span>
+						<span>Me</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="frame">
+			<p>Images by <a href="https://www.instagram.com/marion.sanson/">Marion Sanson</a></p>
+		</div>
+	</main>
+	<!--script src="https://tympanus.net/codrops/adpacks/cda.js"></script-->
+</body>
+
+</html>
